@@ -110,7 +110,7 @@ export default function SearchBar() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Escribe tu pregunta o palabra clave..."
-            className="w-full pl-12 pr-36 py-4 text-base bg-white border-2 border-border rounded-xl focus:outline-none focus:border-primary transition-colors placeholder:text-text-subtle shadow-sm"
+            className="w-full pl-12 pr-36 py-4 text-base bg-white border-2 border-border rounded-xl focus:outline-none focus:border-gray-400 transition-colors placeholder:text-text-subtle shadow-sm"
           />
 
           <div className="absolute right-3 flex items-center gap-2">
