@@ -144,7 +144,7 @@ export default function SearchBar() {
         <div className="mt-4">
           {results.length === 0 ? (
             <div className="rounded-xl border border-border bg-white px-5 py-4">
-              <p className="text-sm text-text-muted">No se han encontrado resultados para <strong>"{query}"</strong>. Prueba con otras palabras.</p>
+              <p className="text-sm text-text-muted">No se han encontrado resultados para <strong>"{query}"</strong>. Prueba usando solo palabras clave.</p>
             </div>
           ) : (
             <div className="rounded-xl border border-border overflow-hidden bg-white">
