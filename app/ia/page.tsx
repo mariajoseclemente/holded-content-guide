@@ -11,7 +11,7 @@ const SparkleRed = ({ id }: { id: string }) => (
 )
 
 const PatronItem = ({ titulo, desc, prefix, i }: { titulo: string; desc: string; prefix: string; i: number }) => (
-  <div className="flex gap-4 p-4 rounded-xl">
+  <div className="flex gap-4 p-4 rounded-lg">
     <SparkleRed id={`${prefix}-${i}`} />
     <div>
       <p className="font-semibold text-text-main mb-0.5">{titulo}</p>
@@ -139,7 +139,7 @@ export default function IAPage() {
         </div>
 
         <h3 className="subsection-title">Sustituciones frecuentes</h3>
-        <div className="mb-8 rounded-xl border border-border overflow-hidden bg-white">
+        <div className="mb-8 rounded-lg border border-border overflow-hidden bg-white">
           <table className="guide-table">
             <thead>
               <tr><th>En lugar de</th><th>Usar</th></tr>
@@ -208,7 +208,7 @@ export default function IAPage() {
               ],
             },
           ].map(({ paso, items }) => (
-            <div key={paso} className="p-5 bg-white rounded-xl border border-border">
+            <div key={paso} className="p-5 bg-white rounded-lg border border-border">
               <p className="font-semibold text-text-main mb-3">{paso}</p>
               <ul className="space-y-1.5">
                 {items.map((item, i) => (
@@ -252,7 +252,7 @@ export default function IAPage() {
             'Los términos clave tienen snippets de definición que la IA puede extraer.',
             'Sección FAQ con <AccordionMDX> si se responden 3 o más preguntas.',
           ].map((item, i) => (
-            <div key={i} className="flex items-start gap-3 p-3 bg-white rounded-xl border border-border text-sm">
+            <div key={i} className="flex items-start gap-3 p-3 bg-white rounded-lg border border-border text-sm">
               <span className="w-4 h-4 rounded border-2 border-border flex-shrink-0 mt-0.5" />
               <span style={{ color: '#686A6C' }}>{item}</span>
             </div>

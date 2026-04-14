@@ -142,7 +142,7 @@ export default function SearchBar() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Escribe tu pregunta o palabra clave..."
-            className="w-full pl-12 pr-36 py-4 text-base bg-white border-2 border-border rounded-xl focus:outline-none focus:border-gray-400 transition-colors placeholder:text-text-subtle shadow-sm"
+            className="w-full pl-12 pr-36 py-4 text-base bg-white border-2 border-border rounded-lg focus:outline-none focus:border-gray-400 transition-colors placeholder:text-text-subtle shadow-sm"
           />
 
           <div className="absolute right-3 flex items-center gap-2">
@@ -175,11 +175,11 @@ export default function SearchBar() {
       {results !== null && (
         <div className="mt-4">
           {results.length === 0 ? (
-            <div className="rounded-xl border border-border bg-white px-5 py-4">
+            <div className="rounded-lg border border-border bg-white px-5 py-4">
               <p className="text-sm text-text-muted">No se han encontrado resultados para <strong>"{query}"</strong>. Prueba usando solo palabras clave.</p>
             </div>
           ) : (
-            <div className="rounded-xl border border-border overflow-hidden bg-white">
+            <div className="rounded-lg border border-border overflow-hidden bg-white">
               <div className="flex items-center gap-2 px-5 py-3 border-b border-border bg-surface-hover">
                 <svg className="w-4 h-4 text-text-subtle flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />

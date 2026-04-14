@@ -101,7 +101,7 @@ export default function EscrituraPage() {
             ['Texto', '3 × 4 = 12'],
             ['Código o fórmula técnica', 'precio * cantidad'],
           ].map(([ctx, ej], i) => (
-            <div key={i} className="flex gap-4 p-4 rounded-xl">
+            <div key={i} className="flex gap-4 p-4 rounded-lg">
               <SparkleRed id={`sparkle-op-${i}`} />
               <div>
                 <p className="font-semibold text-text-main mb-0.5">{ctx}</p>
@@ -146,7 +146,7 @@ export default function EscrituraPage() {
               mal: null,
             },
           ].filter(({ mal, bien }) => mal || bien).map(({ desc, mal, bien }, i) => (
-            <div key={i} className="flex gap-4 p-4 rounded-xl">
+            <div key={i} className="flex gap-4 p-4 rounded-lg">
               <SparkleRed id={`sparkle-din-${i}`} />
               <div className="flex-1">
                 <p className="font-semibold text-text-main mb-2">{desc}</p>
@@ -179,7 +179,7 @@ export default function EscrituraPage() {
             ['Las abreviaturas convencionales sí llevan punto', 'etc., pág., núm., art.'],
             ['Sin plural morfológico en español', 'los IVA repercutidos, no «los IVAs».'],
           ].map(([regla, ej], i) => (
-            <div key={i} className="flex gap-4 p-4 rounded-xl">
+            <div key={i} className="flex gap-4 p-4 rounded-lg">
               <SparkleRed id={`sparkle-sig-${i}`} />
               <div>
                 <p className="font-semibold text-text-main mb-0.5">{regla}</p>
@@ -199,7 +199,7 @@ export default function EscrituraPage() {
         />
 
         <h3 className="subsection-title mt-8">Siglas frecuentes en Holded</h3>
-        <div className="mb-8 rounded-xl border border-border overflow-hidden bg-white">
+        <div className="mb-8 rounded-lg border border-border overflow-hidden bg-white">
           <table className="guide-table">
             <thead>
               <tr><th>Sigla</th><th>Término completo</th></tr>
@@ -311,7 +311,7 @@ export default function EscrituraPage() {
         <p className="section-description">
           Palabras y expresiones de uso frecuente en los textos de Holded y cómo se escriben:
         </p>
-        <div className="mb-8 rounded-xl border border-border overflow-hidden bg-white">
+        <div className="mb-8 rounded-lg border border-border overflow-hidden bg-white">
           <table className="guide-table">
             <thead>
               <tr>

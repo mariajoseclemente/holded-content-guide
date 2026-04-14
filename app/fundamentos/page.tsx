@@ -74,7 +74,7 @@ export default function FundamentosPage() {
             ['Desconexión con la asesoría', 'Permite invitar al asesor a la plataforma para una colaboración contable en tiempo real.'],
             ['Gestión de RR.HH. y CRM', 'Integra la gestión de empleados y el seguimiento de ventas en la misma herramienta de contabilidad.'],
           ].map(([titulo, desc]) => (
-            <div key={titulo} className="flex gap-4 p-5 rounded-xl">
+            <div key={titulo} className="flex gap-4 p-5 rounded-lg">
               <svg className="w-4 h-4 flex-shrink-0 mt-1" viewBox="0 0 16 16" fill="none">
                 <defs>
                   <linearGradient id="sparkle-grad" x1="0" y1="0" x2="16" y2="16" gradientUnits="userSpaceOnUse">
@@ -162,7 +162,7 @@ export default function FundamentosPage() {
               ),
             },
           ].map(({ titulo, desc, icon }) => (
-            <div key={titulo} className="p-5 bg-white rounded-xl border border-border flex flex-col gap-3">
+            <div key={titulo} className="p-5 bg-white rounded-lg border border-border flex flex-col gap-3">
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="#FF5454" strokeWidth={1.75}>
                 {icon}
               </svg>
@@ -190,7 +190,7 @@ export default function FundamentosPage() {
               { perfil: 'Autónomos', desc: 'Profesionales independientes. Les importa la facturación sencilla, el cumplimiento fiscal y no perder tiempo en papeleo.' },
               { perfil: 'Asesorías y gestorías', desc: 'Despachos contables y asesores fiscales. Necesitan gestión multicliente, colaboración en tiempo real y precisión.' },
             ].map(({ perfil, desc }) => (
-              <div key={perfil} className="flex gap-4 p-3 rounded-xl">
+              <div key={perfil} className="flex gap-4 p-3 rounded-lg">
                 <svg className="w-4 h-4 flex-shrink-0 mt-1" viewBox="0 0 16 16" fill="none">
                   <defs>
                     <linearGradient id="sparkle-grad-aud" x1="0" y1="0" x2="16" y2="16" gradientUnits="userSpaceOnUse">
@@ -213,7 +213,7 @@ export default function FundamentosPage() {
               { perfil: 'Solution Partners', desc: 'Partners de integración y revendedores. Les interesan las capacidades técnicas, la API y las oportunidades de coventa.' },
               { perfil: 'Público general', desc: 'Personas que exploran software de gestión. Necesitan explicaciones claras, comparativas y contenido educativo.' },
             ].map(({ perfil, desc }) => (
-              <div key={perfil} className="flex gap-4 p-3 rounded-xl">
+              <div key={perfil} className="flex gap-4 p-3 rounded-lg">
                 <svg className="w-4 h-4 flex-shrink-0 mt-1" viewBox="0 0 16 16" fill="none">
                   <defs>
                     <linearGradient id="sparkle-grad-aud2" x1="0" y1="0" x2="16" y2="16" gradientUnits="userSpaceOnUse">
@@ -292,7 +292,7 @@ export default function FundamentosPage() {
             {nota && <p className="text-sm mb-3 italic" style={{ color: '#686A6C' }}>{nota}</p>}
             <div className="space-y-1">
               {items.map(item => (
-                <div key={item} className="flex gap-4 p-3 rounded-xl">
+                <div key={item} className="flex gap-4 p-3 rounded-lg">
                   <svg className="w-4 h-4 flex-shrink-0 mt-0.5" viewBox="0 0 16 16" fill="none">
                     <defs>
                       <linearGradient id="sparkle-grad-pp" x1="0" y1="0" x2="16" y2="16" gradientUnits="userSpaceOnUse">
@@ -325,7 +325,7 @@ export default function FundamentosPage() {
             { label: 'Perfil secundario', value: 'Mujer, ~37 años (28%)', sub: 'María, Marta, Cristina' },
             { label: 'Tamaño de empresa', value: '83% microempresas', sub: '34% autónomos · 49% 2-10 empleados' },
           ].map(({ label, value, sub }) => (
-            <div key={label} className="p-4 bg-white rounded-xl border border-border">
+            <div key={label} className="p-4 bg-white rounded-lg border border-border">
               <p className="text-xs text-text-subtle mb-1">{label}</p>
               <p className="font-semibold text-text-main text-sm mb-0.5">{value}</p>
               <p className="text-xs" style={{ color: '#9CA3AF' }}>{sub}</p>
@@ -339,7 +339,7 @@ export default function FundamentosPage() {
             { label: 'Facturación pymes', value: '~962.000 €/año' },
             { label: 'Facturación asesorías', value: '~269.000 €/año' },
           ].map(({ label, value }) => (
-            <div key={label} className="p-4 bg-white rounded-xl border border-border">
+            <div key={label} className="p-4 bg-white rounded-lg border border-border">
               <p className="text-xs text-text-subtle mb-1">{label}</p>
               <p className="font-semibold text-text-main text-sm">{value}</p>
             </div>
@@ -349,7 +349,7 @@ export default function FundamentosPage() {
         {/* 2. Perfil sectorial */}
         <h3 className="subsection-title">2. Perfil sectorial</h3>
         <p className="section-description">Holded es una solución transversal, sin un sector dominante.</p>
-        <div className="mb-8 rounded-xl border border-border overflow-hidden bg-white">
+        <div className="mb-8 rounded-lg border border-border overflow-hidden bg-white">
           <table className="guide-table">
             <thead>
               <tr><th>Sector</th><th>% clientes</th></tr>
@@ -381,7 +381,7 @@ export default function FundamentosPage() {
             { ciudad: 'Valencia', pct: 'Relevante' },
             { ciudad: 'Málaga', pct: 'Relevante' },
           ].map(({ ciudad, pct }) => (
-            <div key={ciudad} className="p-4 bg-white rounded-xl border border-border text-center">
+            <div key={ciudad} className="p-4 bg-white rounded-lg border border-border text-center">
               <p className="font-semibold text-text-main text-sm">{ciudad}</p>
               <p className="text-xs mt-0.5" style={{ color: '#686A6C' }}>{pct}</p>
             </div>
@@ -396,7 +396,7 @@ export default function FundamentosPage() {
             { stat: '20%', desc: 'no usan ninguna herramienta digital' },
             { stat: '80%', desc: 'no usaban software antes de Holded' },
           ].map(({ stat, desc }) => (
-            <div key={stat} className="p-5 bg-white rounded-xl border border-border text-center">
+            <div key={stat} className="p-5 bg-white rounded-lg border border-border text-center">
               <p className="text-3xl font-bold text-text-main mb-1">{stat}</p>
               <p className="text-sm" style={{ color: '#686A6C' }}>{desc}</p>
             </div>
@@ -409,12 +409,12 @@ export default function FundamentosPage() {
         {/* 5. Motivaciones */}
         <h3 className="subsection-title">5. Motivaciones de compra</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-          <div className="p-5 bg-white rounded-xl border border-border text-center">
+          <div className="p-5 bg-white rounded-lg border border-border text-center">
             <p className="text-3xl font-bold text-text-main mb-1">50%</p>
             <p className="font-semibold text-text-main text-sm mb-1">Buscan solución de facturación</p>
             <p className="text-sm" style={{ color: '#686A6C' }}>Punto de entrada principal.</p>
           </div>
-          <div className="p-5 bg-white rounded-xl border border-border text-center">
+          <div className="p-5 bg-white rounded-lg border border-border text-center">
             <p className="text-3xl font-bold text-text-main mb-1">25%</p>
             <p className="font-semibold text-text-main text-sm mb-1">Quieren digitalizar su negocio</p>
             <p className="text-sm" style={{ color: '#686A6C' }}>Buscan una herramienta all-in-one.</p>
@@ -427,12 +427,12 @@ export default function FundamentosPage() {
         {/* 6. Canales */}
         <h3 className="subsection-title">6. Cómo nos encuentran</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-          <div className="p-5 bg-white rounded-xl border border-border text-center">
+          <div className="p-5 bg-white rounded-lg border border-border text-center">
             <p className="text-3xl font-bold text-text-main mb-1">34%</p>
             <p className="font-semibold text-text-main text-sm mb-1">Recomendación</p>
             <p className="text-sm" style={{ color: '#686A6C' }}>Canal principal. Boca a boca y asesores.</p>
           </div>
-          <div className="p-5 bg-white rounded-xl border border-border text-center">
+          <div className="p-5 bg-white rounded-lg border border-border text-center">
             <p className="text-3xl font-bold text-text-main mb-1">18,3%</p>
             <p className="font-semibold text-text-main text-sm mb-1">Búsquedas en Google</p>
             <p className="text-sm" style={{ color: '#686A6C' }}>SEO y SEM.</p>
@@ -453,7 +453,7 @@ export default function FundamentosPage() {
             { func: 'Configuración de cuenta', pct: '32%' },
             { func: 'Cuentas bancarias', pct: '31%' },
           ].map(({ func, pct }) => (
-            <div key={func} className="p-4 bg-white rounded-xl border border-border text-center">
+            <div key={func} className="p-4 bg-white rounded-lg border border-border text-center">
               <p className="text-2xl font-bold text-text-main mb-1">{pct}</p>
               <p className="text-xs" style={{ color: '#686A6C' }}>{func}</p>
             </div>
@@ -495,7 +495,7 @@ export default function FundamentosPage() {
               icon: <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />,
             },
           ].map(({ titulo, desc, icon }) => (
-            <div key={titulo} className="p-5 bg-white rounded-xl border border-border flex flex-col gap-3">
+            <div key={titulo} className="p-5 bg-white rounded-lg border border-border flex flex-col gap-3">
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="#FF5454" strokeWidth={1.75}>
                 {icon}
               </svg>
@@ -512,7 +512,7 @@ export default function FundamentosPage() {
         <p className="section-description">
           El cliente ideal de Holded es un <strong>fundador o dueño de una micropyme o autónomo en España</strong> (probablemente hombre, ~40 años, con <strong>0-10 empleados</strong>), del sector servicios o distribución, ubicado en <strong>Madrid o Barcelona</strong>, que usa <strong>Excel o herramientas básicas de facturación</strong>, y que busca digitalizar su negocio con una solución escalable, fácil de usar y siempre actualizada ante los <strong>requisitos legales de facturación electrónica</strong>.
         </p>
-        <div className="rounded-xl px-5 py-4 mb-6" style={{ backgroundColor: '#111827' }}>
+        <div className="rounded-lg px-5 py-4 mb-6" style={{ backgroundColor: '#111827' }}>
           <p className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: '#9CA3AF' }}>Frase que lo resume</p>
           <p className="text-base font-semibold italic" style={{ color: '#FFFFFF' }}>
             "No soy experto en tecnología, solo quiero facturar bien y cumplir con la ley sin complicarme la vida".

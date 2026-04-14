@@ -68,7 +68,7 @@ export default function BrandVoicePage() {
             ['Cercana, pero no tonta', 'Es joven y tiene sentido del humor, pero no cruza los límites.'],
             ['Ambiciosa, pero no insistente', 'Quiere empoderar, sin ser dominante.'],
           ].map(([titulo, desc], i) => (
-            <div key={titulo} className="flex gap-4 p-4 rounded-xl">
+            <div key={titulo} className="flex gap-4 p-4 rounded-lg">
               <SparkleRed id={`sparkle-voz-${i}`} />
               <div>
                 <p className="font-semibold text-text-main mb-0.5">{titulo}</p>
@@ -177,7 +177,7 @@ export default function BrandVoicePage() {
         <p className="section-description">
           La voz no cambia, pero el tono se adapta. De menos a más intensidad:
         </p>
-        <div className="mb-8 rounded-xl border border-border overflow-hidden bg-white">
+        <div className="mb-8 rounded-lg border border-border overflow-hidden bg-white">
           <table className="guide-table">
             <thead>
               <tr>
@@ -221,7 +221,7 @@ export default function BrandVoicePage() {
             ['«Asiento contable»', '«Registrar un gasto o ingreso»'],
             ['«Cash flow»', 'Acompañarlo de «lo que entra y sale de tu cuenta»'],
           ].map(([evita, usa], i) => (
-            <div key={i} className="flex gap-4 p-4 rounded-xl">
+            <div key={i} className="flex gap-4 p-4 rounded-lg">
               <SparkleGrey id={`sparkle-tec-${i}`} />
               <div>
                 <span style={{ color: '#686A6C' }}>En lugar de {evita}, usar {usa}.</span>
@@ -298,7 +298,7 @@ export default function BrandVoicePage() {
               mal: null,
             },
           ].map(({ titulo, bien, mal }, i) => (
-            <div key={i} className="flex gap-4 p-4 rounded-xl">
+            <div key={i} className="flex gap-4 p-4 rounded-lg">
               <SparkleRed id={`sparkle-inc-${i}`} />
               <div>
                 <p className="font-semibold text-text-main mb-1">{titulo}</p>
@@ -309,7 +309,7 @@ export default function BrandVoicePage() {
           ))}
         </div>
 
-        <div className="rounded-xl px-5 py-4 mt-6" style={{ backgroundColor: '#111827' }}>
+        <div className="rounded-lg px-5 py-4 mt-6" style={{ backgroundColor: '#111827' }}>
           <p className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: '#9CA3AF' }}>Lo que NO usamos</p>
           <div className="space-y-1">
             {[

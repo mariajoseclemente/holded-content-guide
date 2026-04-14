@@ -26,7 +26,7 @@ const EjemploGrid = ({ mal, bien }: { mal: string; bien: string }) => (
 const ReglaList = ({ items, prefix }: { items: string[]; prefix: string }) => (
   <div className="space-y-2 mb-6">
     {items.map((item, i) => (
-      <div key={i} className="flex gap-4 p-3 rounded-xl">
+      <div key={i} className="flex gap-4 p-3 rounded-lg">
         <SparkleRed id={`${prefix}-${i}`} />
         <p style={{ color: '#686A6C' }}>{item}</p>
       </div>
@@ -68,7 +68,7 @@ export default function CanalesPage() {
             ['De performance', 'Páginas de campaña, puramente orientadas a convertir.'],
             ['Especiales', 'Home y pricing.'],
           ].map(([tipo, desc], i) => (
-            <div key={i} className="flex gap-4 p-3 rounded-xl">
+            <div key={i} className="flex gap-4 p-3 rounded-lg">
               <SparkleRed id={`tipo-${i}`} />
               <div>
                 <span className="font-semibold text-text-main">{tipo}: </span>
@@ -132,11 +132,11 @@ export default function CanalesPage() {
           <strong>Fórmula:</strong> resultado concreto + contexto o condición. <strong>Longitud:</strong> 4 a 10 palabras. <strong>Tono:</strong> directo, rotundo, orientado al resultado.
         </p>
         <div className="space-y-3 mb-6">
-          <div className="p-5 bg-white rounded-xl border border-border">
+          <div className="p-5 bg-white rounded-lg border border-border">
             <p className="font-semibold text-text-main mb-1">Variante A — resultado concreto</p>
             <p className="text-sm" style={{ color: '#686A6C' }}>Nombra directamente el beneficio o resultado para el usuario. Puede incluir datos o condiciones que refuercen el valor. Admite listas separadas por comas para condensar varios beneficios.</p>
           </div>
-          <div className="p-5 bg-white rounded-xl border border-border">
+          <div className="p-5 bg-white rounded-lg border border-border">
             <p className="font-semibold text-text-main mb-1">Variante B — invitación a la acción</p>
             <p className="text-sm" style={{ color: '#686A6C' }}>Usa un imperativo que invite al usuario a imaginar el escenario completo. Recomendada cuando el bloque describe una propuesta de valor amplia o integradora, no un beneficio puntual.</p>
           </div>
@@ -277,7 +277,7 @@ export default function CanalesPage() {
               ],
             },
           ].map(({ nivel, desc, items }) => (
-            <div key={nivel} className="p-5 bg-white rounded-xl border border-border">
+            <div key={nivel} className="p-5 bg-white rounded-lg border border-border">
               <p className="font-semibold text-text-main mb-1">{nivel}</p>
               <p className="text-sm mb-3" style={{ color: '#686A6C' }}>{desc}</p>
               <ul className="space-y-1">
@@ -293,7 +293,7 @@ export default function CanalesPage() {
         </div>
 
         <h4 className="text-base font-semibold text-text-main mt-6 mb-3">Ejemplos por tipo de página</h4>
-        <div className="mb-8 rounded-xl border border-border overflow-hidden bg-white">
+        <div className="mb-8 rounded-lg border border-border overflow-hidden bg-white">
           <table className="guide-table">
             <thead>
               <tr><th>Página</th><th>CTAs</th></tr>
@@ -361,7 +361,7 @@ export default function CanalesPage() {
 
         {/* IA copy */}
         <h3 className="subsection-title">Generar copy para la web con IA</h3>
-        <div className="rounded-xl px-5 py-4 mb-6" style={{ backgroundColor: '#111827' }}>
+        <div className="rounded-lg px-5 py-4 mb-6" style={{ backgroundColor: '#111827' }}>
           <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#9CA3AF' }}>Instrucciones para la IA</p>
           <p className="text-sm mb-3" style={{ color: '#FFFFFF' }}>
             Eres copywriter de Holded. Antes de escribir nada, pregunta:
@@ -460,7 +460,7 @@ export default function CanalesPage() {
             ['Educativa / how-to', 'Guía práctica o contenido formativo.'],
             ['Corporativa', 'Noticias de empresa, hitos, cultura.'],
           ].map(([tipo, desc], i) => (
-            <div key={i} className="flex gap-4 p-3 rounded-xl">
+            <div key={i} className="flex gap-4 p-3 rounded-lg">
               <SparkleRed id={`email-tipo-${i}`} />
               <div>
                 <span className="font-semibold text-text-main">{tipo}: </span>
@@ -471,7 +471,7 @@ export default function CanalesPage() {
         </div>
 
         <h3 className="subsection-title">Estructura por tipo</h3>
-        <div className="mb-8 rounded-xl border border-border overflow-hidden bg-white">
+        <div className="mb-8 rounded-lg border border-border overflow-hidden bg-white">
           <table className="guide-table">
             <thead>
               <tr><th>Tipo</th><th>Estructura</th></tr>
@@ -542,7 +542,7 @@ export default function CanalesPage() {
             { bloque: 'Sabías que...', desc: '1 a 2 frases con un dato sorprendente. Puede ser ciencia, cultura o tecnología. Con emoji al final.' },
             { bloque: 'Hoy recomendamos', desc: 'Recomendaciones del equipo: apps, libros, series, podcasts... Con nombre y rol. Formato: [título] / [Nombre] / [Rol]' },
           ].map(({ bloque, desc }) => (
-            <div key={bloque} className="p-5 bg-white rounded-xl border border-border flex flex-col gap-2">
+            <div key={bloque} className="p-5 bg-white rounded-lg border border-border flex flex-col gap-2">
               <p className="font-semibold text-text-main">{bloque}</p>
               <p className="text-sm" style={{ color: '#686A6C' }}>{desc}</p>
             </div>
