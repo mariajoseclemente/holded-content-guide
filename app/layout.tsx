@@ -4,7 +4,7 @@ import Sidebar from '@/components/Sidebar'
 
 export const metadata: Metadata = {
   title: 'Guía de estilo Holded',
-  description: 'Guía de estilo de contenidos de Holded para equipos de marketing, producto y comunicación.',
+  description: 'Guía de estilo: todo lo que necesitas para escribir con la voz de Holded.',
   icons: {
     icon: 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✏️</text></svg>',
   },
