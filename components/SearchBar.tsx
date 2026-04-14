@@ -57,10 +57,42 @@ export default function SearchBar() {
       setResults(searchIndex.filter((e) => titles.includes(e.title)))
       return
     }
-    // Normalizar la query para Fuse.js (quitar ¿ y ?)
-    const normalized = trimmed.replace(/[¿?¡!]/g, '').trim()
-    const raw = fuse.search(normalized)
-    setResults(raw.map((r) => r.item))
+    // Normalizar: quitar signos, extraer palabras clave eliminando stop words
+    const STOP_WORDS = new Set([
+      'cómo','como','qué','que','cuál','cual','cuándo','cuando','dónde','donde',
+      'por','para','con','sin','sobre','entre','hasta','desde','en','de','del',
+      'el','la','los','las','un','una','unos','unas','al','lo','le','les',
+      'se','me','te','nos','es','son','está','están','ser','estar',
+      'hay','si','no','ya','más','muy','bien','mal','también','pero','y','o',
+      'a','e','i','u','que','se','su','sus','mi','mis','tu','tus',
+      'escribo','escribir','escriben','uso','usan','usar','poner','pone',
+      'debo','puedo','tengo','quiero','necesito','hay','tiene','tienen',
+    ])
+    const keywords = trimmed
+      .replace(/[¿?¡!,.:;()"']/g, ' ')
+      .toLowerCase()
+      .split(/\s+/)
+      .filter(w => w.length > 2 && !STOP_WORDS.has(w))
+
+    if (keywords.length === 0) {
+      // Si todas eran stop words, buscar la frase completa normalizada
+      const raw = fuse.search(trimmed.replace(/[¿?¡!]/g, '').trim())
+      setResults(raw.map((r) => r.item))
+      return
+    }
+
+    // Buscar cada keyword por separado y combinar resultados únicos
+    const seen = new Set<string>()
+    const combined: SearchEntry[] = []
+    keywords.forEach(kw => {
+      fuse.search(kw).forEach(r => {
+        if (!seen.has(r.item.href)) {
+          seen.add(r.item.href)
+          combined.push(r.item)
+        }
+      })
+    })
+    setResults(combined)
   }
 
   const handleSubmit = (e: React.FormEvent) => {
