@@ -134,7 +134,7 @@ export default function Sidebar() {
               ? 'text-primary font-medium'
               : 'hover:text-white'
           }`}
-          style={{ color: pathname === '/' ? '#FF5454' : '#9CA3AF', backgroundColor: pathname === '/' ? '#1F2937' : undefined }}
+          style={{ color: pathname === '/' ? '#FFFFFF' : '#9CA3AF', backgroundColor: pathname === '/' ? '#1F2937' : undefined }}
           onMouseEnter={e => { if (pathname !== '/') (e.currentTarget as HTMLElement).style.backgroundColor = '#1F2937' }}
           onMouseLeave={e => { if (pathname !== '/') (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent' }}
         >
@@ -161,7 +161,7 @@ export default function Sidebar() {
                 <Link
                   href={group.href}
                   className="flex-1 px-3 py-2 text-sm font-medium transition-colors"
-                  style={{ color: isActive ? '#FF5454' : '#E5E7EB' }}
+                  style={{ color: isActive ? '#FFFFFF' : '#E5E7EB' }}
                 >
                   {group.label}
                 </Link>
@@ -196,7 +196,7 @@ export default function Sidebar() {
                           href={item.href}
                           className="flex items-center gap-2 pl-6 pr-3 py-1.5 rounded-md text-sm transition-colors"
                           style={{
-                            color: isItemActive ? '#FF5454' : '#9CA3AF',
+                            color: isItemActive ? '#FFFFFF' : '#9CA3AF',
                             fontWeight: isItemActive ? 500 : 400,
                             backgroundColor: isItemActive && !isAnchorItem ? '#1F2937' : undefined,
                           }}
