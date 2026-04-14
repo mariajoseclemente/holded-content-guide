@@ -62,7 +62,7 @@ export default function Home() {
       {/* Hero */}
       <div className="-mx-8 -mt-10 mb-12">
         <div
-          className="px-8 py-16 text-center"
+          className="px-8 py-16 text-center rounded-lg"
           style={{ background: 'linear-gradient(160deg, #0f1117 0%, #1a1f2e 60%, #0f1117 100%)' }}
         >
           <p className="text-sm font-medium mb-5 tracking-wide uppercase" style={{ color: '#6B7280' }}>
@@ -96,7 +96,7 @@ export default function Home() {
             <Link
               key={card.href}
               href={card.href}
-              className="group p-6 rounded-2xl border border-border bg-white hover:border-primary hover:shadow-base transition-all flex flex-col"
+              className="group p-6 rounded-lg border border-border bg-white hover:border-primary hover:shadow-base transition-all flex flex-col"
             >
               <div className="text-primary mb-4">
                 {card.icon}
@@ -117,7 +117,7 @@ export default function Home() {
 
       {/* Notice */}
       <div className="mt-12 pt-8 border-t border-border">
-        <div className="rounded-2xl px-8 py-7 flex items-center gap-6" style={{ backgroundColor: '#111827' }}>
+        <div className="rounded-lg px-8 py-7 flex items-center gap-6" style={{ backgroundColor: '#111827' }}>
           <svg className="w-10 h-10 flex-shrink-0" style={{ color: '#6B7280' }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
           </svg>
