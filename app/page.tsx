@@ -29,7 +29,7 @@ const quickCards = [
     border: 'border-blue-100',
   },
   {
-    href: '/numeros',
+    href: '/escritura#numeros',
     title: 'Gramática y estilo',
     description: 'Cómo escribir los números, el dinero, anglicismos...',
     icon: (
@@ -42,8 +42,8 @@ const quickCards = [
     border: 'border-blue-100',
   },
   {
-    href: '/word-list',
-    title: 'Word list',
+    href: '/escritura#word-list',
+    title: 'Lista de palabras',
     description: 'Palabras y expresiones de uso frecuente en los textos de Holded y cómo se escriben.',
     icon: (
       <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75}>

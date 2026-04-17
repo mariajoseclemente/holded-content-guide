@@ -40,7 +40,7 @@ export default function EscrituraPage() {
         <a href="#siglas">Siglas y acrónimos</a>
         <a href="#puntuacion">Puntuación</a>
         <a href="#anglicismos">Anglicismos</a>
-        <a href="#word-list">Word list</a>
+        <a href="#word-list">Lista de palabras</a>
       </nav>
 
       {/* Números */}
@@ -305,9 +305,9 @@ export default function EscrituraPage() {
         </div>
       </div>
 
-      {/* Word list */}
+      {/* Lista de palabras */}
       <div id="word-list" className="content-section">
-        <h2 className="section-title">Word list</h2>
+        <h2 className="section-title">Lista de palabras</h2>
         <p className="section-description">
           Palabras y expresiones de uso frecuente en los textos de Holded y cómo se escriben:
         </p>

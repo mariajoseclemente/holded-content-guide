@@ -32,7 +32,7 @@ const navGroups = [
       { href: '/escritura#siglas', label: 'Siglas y acrónimos' },
       { href: '/escritura#puntuacion', label: 'Puntuación' },
       { href: '/escritura#anglicismos', label: 'Anglicismos' },
-      { href: '/escritura#word-list', label: 'Word list' },
+      { href: '/escritura#word-list', label: 'Lista de palabras' },
     ],
   },
   {
