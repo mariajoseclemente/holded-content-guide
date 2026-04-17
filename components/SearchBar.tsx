@@ -34,7 +34,7 @@ const SUGGESTION_RESULTS: Record<string, string[]> = {
 
 const SECTION_COLORS: Record<string, string> = {
   'Fundamentos de marca': 'bg-purple-50 text-purple-700 border-purple-100',
-  'Brand voice': 'bg-blue-50 text-blue-700 border-blue-100',
+  'Voz de marca': 'bg-blue-50 text-blue-700 border-blue-100',
   'Escritura': 'bg-amber-50 text-amber-700 border-amber-100',
   'Canales': 'bg-green-50 text-green-700 border-green-100',
   'IA': 'bg-red-50 text-red-700 border-red-100',

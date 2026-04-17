@@ -15,7 +15,7 @@ const navGroups = [
     ],
   },
   {
-    label: 'Brand voice',
+    label: 'Voz de marca',
     href: '/brand-voice',
     items: [
       { href: '/brand-voice#voz-holded', label: 'La voz de Holded' },

@@ -39,7 +39,7 @@ export default function BrandVoicePage() {
   return (
     <div>
       <div className="page-header">
-        <span className="page-eyebrow">Brand Voice</span>
+        <span className="page-eyebrow">Voz de marca</span>
         <h1 className="page-title">Voz y tono de Holded</h1>
         <p className="page-description">
           La voz de Holded no cambia. El tono sí, según el canal y el contexto. La voz es quiénes somos; el tono es cómo sonamos en cada situación.
